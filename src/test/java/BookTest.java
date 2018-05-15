@@ -1,15 +1,11 @@
-
 import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 
 public class BookTest {
 
-
 //        Write a method to count the number of books in the library.
 //        Write a method to add a book to the library stock
 //        Add a capacity to the library and write a method to check if stock is full before adding a book.
-
 
      @Test
      public void hasNumberOfBooks(){
@@ -25,7 +21,6 @@ public class BookTest {
          assertEquals(1, book.countBooks());
     }
 
-
      @Test
      public void cannotAddBook(){
          Book book = new Book();
@@ -38,10 +33,5 @@ public class BookTest {
          book.addBook(book);
          assertEquals(5, book.countBooks());
      }
-
-
-
-
-
 
 }
